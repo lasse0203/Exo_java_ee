@@ -9,29 +9,31 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+  <%@ include file="bootstrapImports.html"%>
     <title>Inscription</title>
 </head>
 <body>
-<main>
+<main class="container">
+  <h1 class="text-secondary text-center">Inscription</h1>
+  <hr>
   <form action="inscription" method="post">
-    <div>
-      <label for="firstname">Firstname: </label>
-      <input type="text" name="firstname" id="firstname">
+    <div class="mb-3">
+      <label for="firstname" class="form-label">Firstname</label>
+      <input type="text" class="form-control" id="firstname" >
     </div>
-    <div>
-      <label for="lastname">Lastname: </label>
-      <input type="text" name="lastname" id="lastname">
+    <div class="mb-3">
+      <label for="lastname" class="form-label">Lastname</label>
+      <input type="text" class="form-control" id="lastname" >
     </div>
-    <div>
-      <label for="phonenumber">Phonenumber: </label>
-      <input type="text"  name="phonenumber" id="phonenumber">
+    <div class="mb-3">
+      <label for="phonenumber" class="form-label">Phone number</label>
+      <input type="text" class="form-control" id="phonenumber" >
     </div>
-    <div>
-      <label for="addres">Addres: </label>
-      <input type="text"  name="addres" id="addres">
+    <div class="mb-3">
+      <label for="addres" class="form-label">Addres</label>
+      <input type="text" class="form-control" id="addres" >
     </div>
-    <hr>
-    <button> envoyer </button>
+    <button type="submit" class="btn btn-primary">Submit</button>
   </form>
 </main>
 </body>
